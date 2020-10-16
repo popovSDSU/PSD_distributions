@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name="ISATNN"
+#SBATCH --output="ISATNN.%j.%N.out"
+#SBATCH --partition=day-long-cpu
+#SBATCH --nodes=1
+#SBATCH --nodelist=node44
+#SBATCH --ntasks-per-node=1
+#SBATCH --export=ALL
+#SBATCH -t 04:15:00
+
+./a.exe > outApr08

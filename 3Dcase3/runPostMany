@@ -1,0 +1,253 @@
+#!/bin/bash
+#SBATCH --job-name="ISATNN"
+#SBATCH --output="ISATNN.%j.%N.out"
+#SBATCH --partition=day-long-cpu
+#SBATCH --nodes=1
+#SBATCH --nodelist=node44
+#SBATCH --ntasks-per-node=30
+#SBATCH --export=ALL
+#SBATCH -t 04:15:00
+
+./b1 1500 1 > outPost15 &
+./b1 1600 1 > outPost16 &
+./b1 1700 1 > outPost17 &
+./b1 1800 1 > outPost18 &
+./b1 1900 1 > outPost19 &
+./b1 2000 1 > outPost20 &
+./b1 2100 1 > outPost21 &
+./b1 2200 1 > outPost22 &
+./b1 2300 1 > outPost23 &
+./b1 2400 1 > outPost24 &
+./b1 2500 1 > outPost25 &
+./b1 2600 1 > outPost26 &
+./b1 2700 1 > outPost27 &
+./b1 2800 1 > outPost28 &
+./b1 2900 1 > outPost29 &
+./b1 3000 1 > outPost30 &
+
+wait
+
+cat *1.dat > output_217.dat
+
+./b1 217 0 > outPost217
+
+mv results.dat results1.dat
+
+wait
+
+./b2 1500 1 > outPost15 &
+./b2 1600 1 > outPost16 &
+./b2 1700 1 > outPost17 &
+./b2 1800 1 > outPost18 &
+./b2 1900 1 > outPost19 &
+./b2 2000 1 > outPost20 &
+./b2 2100 1 > outPost21 &
+./b2 2200 1 > outPost22 &
+./b2 2300 1 > outPost23 &
+./b2 2400 1 > outPost24 &
+./b2 2500 1 > outPost25 &
+./b2 2600 1 > outPost26 &
+./b2 2700 1 > outPost27 &
+./b2 2800 1 > outPost28 &
+./b2 2900 1 > outPost29 &
+./b2 3000 1 > outPost30 &
+
+wait
+
+cat *1.dat > output_217.dat
+
+./b2 217 0 > outPost217
+
+mv results.dat results2.dat
+
+wait
+
+./b3 1500 1 > outPost15 &
+./b3 1600 1 > outPost16 &
+./b3 1700 1 > outPost17 &
+./b3 1800 1 > outPost18 &
+./b3 1900 1 > outPost19 &
+./b3 2000 1 > outPost20 &
+./b3 2100 1 > outPost21 &
+./b3 2200 1 > outPost22 &
+./b3 2300 1 > outPost23 &
+./b3 2400 1 > outPost24 &
+./b3 2500 1 > outPost25 &
+./b3 2600 1 > outPost26 &
+./b3 2700 1 > outPost27 &
+./b3 2800 1 > outPost28 &
+./b3 2900 1 > outPost29 &
+./b3 3000 1 > outPost30 &
+
+wait
+
+cat *1.dat > output_217.dat
+
+./b3 217 0 > outPost217
+
+mv results.dat results3.dat
+
+wait
+
+./b4 1500 1 > outPost15 &
+./b4 1600 1 > outPost16 &
+./b4 1700 1 > outPost17 &
+./b4 1800 1 > outPost18 &
+./b4 1900 1 > outPost19 &
+./b4 2000 1 > outPost20 &
+./b4 2100 1 > outPost21 &
+./b4 2200 1 > outPost22 &
+./b4 2300 1 > outPost23 &
+./b4 2400 1 > outPost24 &
+./b4 2500 1 > outPost25 &
+./b4 2600 1 > outPost26 &
+./b4 2700 1 > outPost27 &
+./b4 2800 1 > outPost28 &
+./b4 2900 1 > outPost29 &
+./b4 3000 1 > outPost30 &
+
+wait
+
+cat *1.dat > output_217.dat
+
+./b4 217 0 > outPost217
+
+mv results.dat results4.dat
+
+wait
+
+./b5 1500 1 > outPost15 &
+./b5 1600 1 > outPost16 &
+./b5 1700 1 > outPost17 &
+./b5 1800 1 > outPost18 &
+./b5 1900 1 > outPost19 &
+./b5 2000 1 > outPost20 &
+./b5 2100 1 > outPost21 &
+./b5 2200 1 > outPost22 &
+./b5 2300 1 > outPost23 &
+./b5 2400 1 > outPost24 &
+./b5 2500 1 > outPost25 &
+./b5 2600 1 > outPost26 &
+./b5 2700 1 > outPost27 &
+./b5 2800 1 > outPost28 &
+./b5 2900 1 > outPost29 &
+./b5 3000 1 > outPost30 &
+
+wait
+
+cat *1.dat > output_217.dat
+
+./b5 217 0 > outPost217
+
+mv results.dat results5.dat
+
+wait
+
+./b6 1500 1 > outPost15 &
+./b6 1600 1 > outPost16 &
+./b6 1700 1 > outPost17 &
+./b6 1800 1 > outPost18 &
+./b6 1900 1 > outPost19 &
+./b6 2000 1 > outPost20 &
+./b6 2100 1 > outPost21 &
+./b6 2200 1 > outPost22 &
+./b6 2300 1 > outPost23 &
+./b6 2400 1 > outPost24 &
+./b6 2500 1 > outPost25 &
+./b6 2600 1 > outPost26 &
+./b6 2700 1 > outPost27 &
+./b6 2800 1 > outPost28 &
+./b6 2900 1 > outPost29 &
+./b6 3000 1 > outPost30 &
+
+wait
+
+cat *1.dat > output_217.dat
+
+./b6 217 0 > outPost217
+
+mv results.dat results6.dat
+
+wait
+
+./b7 1500 1 > outPost15 &
+./b7 1600 1 > outPost16 &
+./b7 1700 1 > outPost17 &
+./b7 1800 1 > outPost18 &
+./b7 1900 1 > outPost19 &
+./b7 2000 1 > outPost20 &
+./b7 2100 1 > outPost21 &
+./b7 2200 1 > outPost22 &
+./b7 2300 1 > outPost23 &
+./b7 2400 1 > outPost24 &
+./b7 2500 1 > outPost25 &
+./b7 2600 1 > outPost26 &
+./b7 2700 1 > outPost27 &
+./b7 2800 1 > outPost28 &
+./b7 2900 1 > outPost29 &
+./b7 3000 1 > outPost30 &
+
+wait
+
+cat *1.dat > output_217.dat
+
+./b7 217 0 > outPost217
+
+mv results.dat results7.dat
+
+wait
+
+./b8 1500 1 > outPost15 &
+./b8 1600 1 > outPost16 &
+./b8 1700 1 > outPost17 &
+./b8 1800 1 > outPost18 &
+./b8 1900 1 > outPost19 &
+./b8 2000 1 > outPost20 &
+./b8 2100 1 > outPost21 &
+./b8 2200 1 > outPost22 &
+./b8 2300 1 > outPost23 &
+./b8 2400 1 > outPost24 &
+./b8 2500 1 > outPost25 &
+./b8 2600 1 > outPost26 &
+./b8 2700 1 > outPost27 &
+./b8 2800 1 > outPost28 &
+./b8 2900 1 > outPost29 &
+./b8 3000 1 > outPost30 &
+
+wait
+
+cat *1.dat > output_217.dat
+
+./b8 217 0 > outPost217
+
+mv results.dat results8.dat
+
+wait
+
+./b9 1500 1 > outPost15 &
+./b9 1600 1 > outPost16 &
+./b9 1700 1 > outPost17 &
+./b9 1800 1 > outPost18 &
+./b9 1900 1 > outPost19 &
+./b9 2000 1 > outPost20 &
+./b9 2100 1 > outPost21 &
+./b9 2200 1 > outPost22 &
+./b9 2300 1 > outPost23 &
+./b9 2400 1 > outPost24 &
+./b9 2500 1 > outPost25 &
+./b9 2600 1 > outPost26 &
+./b9 2700 1 > outPost27 &
+./b9 2800 1 > outPost28 &
+./b9 2900 1 > outPost29 &
+./b9 3000 1 > outPost30 &
+
+wait
+
+cat *1.dat > output_217.dat
+
+./b9 217 0 > outPost217
+
+mv results.dat results9.dat
+
+wait
+

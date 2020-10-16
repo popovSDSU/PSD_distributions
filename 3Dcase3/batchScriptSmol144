@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name="ISATNN"
+#SBATCH --output="ISATNN.%j.%N.out"
+#SBATCH --partition=week-long-cpu
+#SBATCH --nodes=4
+#SBATCH --nodelist=node[42-45]
+#SBATCH --ntasks-per-node=36
+#SBATCH --export=ALL
+#SBATCH -t 47:15:00
+
+module load intel/2018.2.199
+module load openmpi/intel/2018.2.199/4.0.0
+
+mpirun -np 144 ./a.exe > outApr08
